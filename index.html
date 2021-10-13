@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-container">
+        <i class="fas fa-search">
+          <input type="search" placeholder="Search for places"
+        /></i>
+        <img
+          class="main-image"
+          src="./images/sunny.png"
+          alt="main-weather-icon"
+        />
+        <h4 class="main-temperature">12°C</h4>
+        <hr />
+        <p class="main-date">Monday, 4PM</p>
+        <p>Mostly Sunny</p>
+        <div class="city">
+          <h1>Kansas City, USA</h1>
+        </div>
+      </div>
+      <div class="right-container">
+        <h4 class="today">Today</h4>
+        <h4 class="week">Week</h4>
+        <button class="celcius">C°</button>
+        <button class="fahrenheit">F°</button>
+        <div class="box day-1">
+          <h4>Sun</h4>
+          <img src="./images/rain.png" alt="rain-picture" />
+          <p>15° / <span style="color: #afafaf">3°</span></p>
+        </div>
+        <div class="box day-2">
+          <h4>Monday</h4>
+          <img src="./images/mostlycloudy.png" alt="cloudy-picture" />
+          <p>12° / <span style="color: #afafaf">5°</span></p>
+        </div>
+        <div class="box day-3">
+          <h4>Tuesday</h4>
+          <img src="./images/tstorms.png" alt="storm-picture" />
+          <p>18° / <span style="color: #afafaf">7°</span></p>
+        </div>
+        <div class="box day-4">
+          <h4>Wednesday</h4>
+          <img src="./images/sunny.png" alt="sunny-picture" />
+          <p>21° / <span style="color: #afafaf">11°</span></p>
+        </div>
+        <div class="box day-5">
+          <h4>Thursday</h4>
+          <img src="./images/hazy.png" alt="hazy-picture" />
+          <p>19° / <span style="color: #afafaf">10°</span></p>
+        </div>
+        <div class="box day-6">
+          <h4>Friday</h4>
+          <img src="./images/rain.png" alt="rain-picture" />
+          <p>16° / <span style="color: #afafaf">4°</span></p>
+        </div>
+        <div class="box day-7">
+          <h4>Saturday</h4>
+          <img src="./images/cloudy.png" alt="cloudy-picture" />
+          <p>17° / <span style="color: #afafaf">6°</span></p>
+        </div>
+        <h3 class="highlights">Today's Highlights</h3>
+        <div class="max-min">
+          <h2 style="color: #afafaf">Max/Min</h2>
+          <h2>🥵 17°</h2>
+          <h2>🥶 3°</h2>
+        </div>
+        <div class="wind-status">
+          <h2 style="color: #afafaf">Wind Status</h2>
+          <h4>7km/h</h4>
+          <progress value="10" max="40" aria-placeholder="hey"></progress>
+        </div>
+        <div class="sunrise-sunset">
+          <h2 style="color: #afafaf">Sunrise & Sunset</h2>
+          <i class="fas fa-arrow-up fa-2x"></i>
+          <i class="fas fa-arrow-down fa-2x"></i>
+        </div>
+        <div class="visibility">
+          <h2 style="color: #afafaf">Visibility</h2>
+          <h2>12km</h2>
+          <h6>👍 Good</h6>
+        </div>
+        <div class="humidity">
+          <h2 style="color: #afafaf">Humidity</h2>
+          <h2>105</h2>
+          <h6>👎 Unhealthy</h6>
+        </div>
+        <div class="uv-index">
+          <h2 style="color: #afafaf">Uv Index</h2>
+          <h2>5</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

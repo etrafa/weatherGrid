@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", cursive;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.4fr 1fr;
+}
+
+.left-container {
+  text-align: center;
+}
+
+.left-container img {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.main-image {
+  margin-left: 10rem;
+  margin-top: 4rem;
+}
+
+.main-temperature {
+  font-size: 5rem;
+  font-weight: lighter;
+  margin-top: 0px;
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+.left-container input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  background-color: #f7f6f9;
+  margin: 4rem 0 0 2rem;
+}
+::placeholder {
+  color: #000000;
+  font-family: "Poppins", cursive;
+  padding-left: 2rem;
+}
+
+.city {
+  margin: 0 auto;
+  width: 70%;
+  height: 150px;
+  border-radius: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/city-background.jpg);
+  background-size: cover;
+}
+
+.city h1 {
+  color: white;
+  text-align: center;
+  padding-top: 3.5rem;
+  margin-top: 8rem;
+}
+
+.right-container {
+  background-color: #f7f6f9;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.5fr 0.5fr;
+  grid-gap: 1em;
+  grid-template-areas:
+    "today today today week week celcius fahrenheit"
+    "day-1 day-2 day-3 day-4 day-5 day-6 day-7"
+    "highlights highlights highlights highlights highlights highlights highlights"
+    "max-min max-min wind-status wind-status wind-status sunrise-sunset sunrise-sunset"
+    "visibility visibility humidity humidity humidity uv-index uv-index";
+}
+
+.highlights {
+  grid-area: highlights;
+}
+
+.today {
+  grid-area: today;
+}
+.week {
+  grid-area: week;
+}
+.celcius {
+  grid-area: celcius;
+  border-radius: 100%;
+  background-color: #000000;
+  width: 3rem;
+  height: 3rem;
+  color: #ffffff;
+  font-weight: bolder;
+  margin-left: 8rem;
+}
+.fahrenheit {
+  grid-area: fahrenheit;
+  border-radius: 100%;
+  color: #000000;
+  width: 3rem;
+  height: 3rem;
+  font-weight: bolder;
+  background-color: #ffffff;
+}
+
+.day-1 {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  grid-area: day-1;
+  margin-top: 2rem;
+  margin-left: 20px;
+}
+
+.day-2 {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  grid-area: day-2;
+  margin-top: 2rem;
+}
+.day-3 {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  grid-area: day-3;
+  margin-top: 2rem;
+}
+.day-4 {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  grid-area: day-4;
+  margin-top: 2rem;
+}
+.day-5 {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  grid-area: day-5;
+  margin-top: 2rem;
+}
+.day-6 {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  grid-area: day-6;
+  margin-top: 2rem;
+}
+.day-7 {
+  background-color: #ffffff;
+  border-radius: 3rem;
+  grid-area: day-7;
+  margin-top: 2rem;
+  margin-right: 20px;
+}
+
+.box img {
+  max-width: 40%;
+  height: auto;
+}
+
+.max-min {
+  background-color: #ffffff;
+  grid-area: max-min;
+  margin-left: 20px;
+  border-radius: 3rem;
+}
+
+.wind-status {
+  background-color: #ffffff;
+  grid-area: wind-status;
+  border-radius: 3rem;
+}
+
+.sunrise-sunset {
+  background-color: #ffffff;
+  grid-area: sunrise-sunset;
+  margin-right: 20px;
+  border-radius: 3rem;
+}
+
+.visibility {
+  background-color: #ffffff;
+  grid-area: visibility;
+  margin-bottom: 1rem;
+  margin-left: 20px;
+  border-radius: 3rem;
+}
+
+.humidity {
+  background-color: #ffffff;
+  grid-area: humidity;
+  margin-bottom: 1rem;
+  border-radius: 3rem;
+}
+
+.uv-index {
+  background-color: #ffffff;
+  grid-area: uv-index;
+  margin-bottom: 1rem;
+  margin-right: 20px;
+  border-radius: 3rem;
+}
+
+.fa-arrow-up {
+  display: block;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.fa-arrow-down {
+  display: block;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.wind-status progress {
+  width: 80%;
+  height: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .right-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr;
+    grid-template-areas:
+      "today" "week" "celcius" "fahrenheit" "day-1" "day-2" "day-3" "day-4" "day-5" "day-6" "day-7" "highlights" "max-min" "wind-status" "sunrise-sunset"
+      "visibility" "humidity" "uv-index";
+  }
+
+  .city h1 {
+    margin: 0;
+  }
+  .max-min,
+  .sunrise-sunset,
+  .visibility,
+  .uv-index,
+  .day-7 {
+    margin: 0;
+  }
+  .uv-index {
+    margin-bottom: 5rem;
+  }
+  .celcius {
+    margin: 0 auto;
+  }
+  .fahrenheit {
+    margin: 0 auto;
+  }
+}
